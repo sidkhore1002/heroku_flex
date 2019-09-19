@@ -1,0 +1,68 @@
+.table_main_div{
+    display: flex; 
+    margin-left: 8%; 
+    padding-top: 7%;   
+}
+.first_tr{ 
+    height: 64px;    
+}
+.second_tr{ 
+    height: 91px;    
+    text-align: center 
+}
+.API_th{ 
+    width: 280px;    
+    border-radius: 11px 0 0 0;	
+}
+.line_between_each_column{ 
+    width: 0.7px; 
+    background-color: rgb(230, 231, 233); 
+}
+.primary{
+    align-self: center;
+    margin-top: 18px;
+}
+.API_percentage_name{
+    align-self: center;
+    margin-top: 31px;
+}
+.percentage1{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 24px;	
+    color: #D0021B; 
+}
+.API_name{
+    text-align: left; 
+    width: 155px; 
+    font-family: Roboto; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.percentage2{ 
+    font-family: Roboto; 
+    font-size: 24px;	
+    color: #F5A623; 
+}
+.percentage3{ 
+    font-family: Roboto; 
+    font-size: 24px; 
+    color: #7ED321; 
+}
+.Secondary_Optional{ 
+    border-radius: 0 11px 0 0;
+    width: 290px;
+}
+.primary_secondary_values{ 
+    font-family: Roboto; 
+    font-size: 26px; 
+    line-height: 30px; 
+    height: 30px; 
+    width: 53px; 
+}    
+table {
+    border-collapse: collapse;
+}
+tr:nth-child(odd) {
+    background-color: #F2F4F8;
+}

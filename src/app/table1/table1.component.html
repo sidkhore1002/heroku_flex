@@ -1,0 +1,47 @@
+<div class="table_main_div">
+  <table>
+    <tr class="first_tr tr:nth-child" >
+
+      <th class="API_th"> API </th>
+      <th class="line_between_each_column"> </th>
+
+      <th class="primary" style="width: 190px;" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="center center">
+        <div >Primary (2) </div>
+        <img src="../../assets/Group 3.png">
+      </th>
+      <th class="line_between_each_column"> </th>
+
+      <th style="width: 290px;" fxLayout="row" fxLayoutGap="50px" fxLayoutAlign="center center">
+        <div> Secondary Compulsory (4) </div>
+        <img src="../../assets/Group 3.png"> 
+      </th>
+      <th class="line_between_each_column"> </th>
+
+      <th class="Secondary_Optional" fxLayout="row" fxLayoutGap="50px" fxLayoutAlign="center center">
+        <div> Secondary Optional (3) </div>
+        <img src="../../assets/Group 3.png">
+      </th>
+      
+    </tr>
+
+    <tr class="second_tr" *ngFor="let obj of data_from_API">
+
+      <div class="API_percentage_name" fxLayout="row" fxLayoutAlign="space-around center">
+        <td [ngClass]="{'percentage1':obj.percentage<=20, 'percentage2':obj.percentage>20 && obj.percentage<=70, 'percentage3':obj.percentage>70 }">
+          <b> {{obj.percentage}}% </b> </td>
+        <div class="API_name"> {{obj.apiName}} </div>
+      </div>
+
+      <td class="line_between_each_column"> </td>
+
+      <td class="primary_secondary_values"> {{obj.compliantWithPrimary}} / 10 </td>
+      <td class="line_between_each_column"> </td>
+
+      <td class="primary_secondary_values"> {{obj.compliantWithSecondaryCompulsory}} / 10 </td>
+      <td class="line_between_each_column"> </td>
+
+      <td class="primary_secondary_values"> {{obj.compliantWithSecondaryOptional}} / 10 </td>
+
+    </tr>
+  </table>
+</div>

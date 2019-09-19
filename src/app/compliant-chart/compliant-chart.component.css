@@ -1,0 +1,20 @@
+.box{
+    min-height: 180px;
+    width: 179px;
+    background-color: #72C511;;
+    border-radius: 3px;
+}
+.total_text{
+    color: white;
+    font-family: Roboto;
+    
+}
+.percentage_text{
+    font-size: 33px;
+    position: relative;
+    left: 35px;
+    top: -78px;
+    color: white;
+    font-family: Roboto;
+}
+

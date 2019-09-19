@@ -1,0 +1,137 @@
+.table_main_div{
+    display: flex; 
+    margin-left: 8%; 
+    padding-top: 7%;   
+}
+.first_tr{ 
+    height: 44px;    
+}
+.second_tr{ 
+    height: 64px;    
+    text-align: center 
+}
+.first_table_head{ 
+    width: 220px;    
+    border-radius: 11px 0 0 0;	
+}
+.line_between_each_column{ 
+    width: 0.7px; 
+    height: 40px;
+    background-color: rgb(230, 231, 233); 
+}
+.table_head{
+    align-self: center;
+    margin-top: 10px;
+    width: 80px;
+}
+.API_column_values{
+    align-self: center;
+    margin-top: 22px;
+    
+}
+.percentage1{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 24px;	
+    color: #D0021B; 
+}
+.percentage2{ 
+    font-family: Roboto; 
+    font-size: 24px;	
+    color: #F5A623; 
+}
+.percentage3{ 
+    font-family: Roboto; 
+    font-size: 24px; 
+    color: #7ED321; 
+}
+
+.API_name{
+    text-align: left; 
+    width: 150px; 
+    font-family: Roboto; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.last_column{ 
+    border-radius: 0 11px 0 0;
+    width: 45px;
+}
+.right_wrong_icon{ 
+    font-family: Roboto; 
+    font-size: 26px; 
+    line-height: 30px; 
+    height: 30px; 
+    width: 53px; 
+}    
+table {
+    border-collapse: collapse;
+}
+thead tr:nth-child(odd) {
+    background-color: #F2F4F8;
+}
+tbody:nth-child(odd) {
+    background-color: #F2F4F8;
+}
+
+.line{
+    background-color: rgb(230, 231, 233); 
+    width: 100%;
+    height: 1px;
+    margin-top: -2.8%;
+}
+.describe{
+    height: 310px;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 11px 11px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.19);
+
+}
+.subject{
+    width: 960px;
+    margin-left: 2%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+
+}
+.error{
+    width: 460px;
+    color: #D0021B;
+    
+
+    display: block;
+    display: -webkit-box;
+    height: 153px;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.solution{
+    width: 460px;
+    color: #3C8900;
+
+    display: block;
+    display: -webkit-box;
+    height: 193px;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.view_button{
+    color: white;
+    font-size: 17px;
+    height: 53px;	
+    width: 123px;	
+    border-radius: 30.2px;	
+    background-color: #5C39BA;
+    margin-left: 70%;
+    margin-top: 6%;
+}

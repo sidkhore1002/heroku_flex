@@ -1,0 +1,134 @@
+<div class="table_main_div">
+    <table>
+        <thead>
+        <tr class="first_tr tr:nth-child" >
+  
+        <th class="first_table_head"> API </th>
+        <th class="line_between_each_column"> </th>
+  
+        <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+          <div > P 1 </div>
+          <img src="../../assets/Group 3.png">
+        </th>
+        <th class="line_between_each_column"> </th>
+  
+        <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > P 2 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 1 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 2 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 3 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 4 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 5 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 6 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+ 
+          <th class="table_head" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center">
+            <div > S 7 </div>
+            <img src="../../assets/Group 3.png">
+          </th>
+          <th class="line_between_each_column"> </th>
+
+          <th class="last_column" fxLayoutAlign="center center">
+
+          </th>
+
+        </tr>
+    </thead>
+    <tbody class="tr:nth-child" *ngFor="let object of analysis_array_from_API; let clickIndex= index">
+
+        <tr class="second_tr" >
+
+            <div class="API_column_values" fxLayout="row" fxLayoutAlign="space-around center">
+              <td [ngClass]="{'percentage1':object.percentage<=2, 'percentage2':object.percentage>2 && object.percentage<=4, 'percentage3':object.percentage>4 }">
+                <b> {{object.percentage}}% </b> </td>
+
+              <div class="API_name"> {{object.api_name}} </div>
+            </div>
+            
+            <td class="line_between_each_column"> </td>
+    
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td class="right_wrong_icon"> <img src="../../assets/Group Copy 9.png"> </td>
+            <td class="line_between_each_column"> </td>      
+
+            <td > <img src="../../assets/baseline-keyboard_arrow_down-24px.svg" (click)="update_flag(clickIndex)" > </td>
+
+        </tr>
+    
+        <tr class="tr:nth-child" *ngIf="object.show_description_flag==true"  > 
+          <td class="describe" colspan="22" >  
+            <div class="line"> </div><br><br>
+            <div class="subject"> <b> {{object.subject}} </b> </div><br>
+
+            <div fxLayout="row" fxLayoutGap="18px" fxLayoutAlign="space-around">
+              <div class="error"> <b> Error </b> <br><br> {{object.error}}  </div>
+            
+              <div class="solution"> <b> Solution </b>  <br><br> {{object.solution}} ...
+                <button class="view_button"> <b> View </b> </button>
+              </div>
+
+            </div><br>
+
+          </td>
+          </tr>    
+
+    </tbody>  
+  
+    </table>
+  </div>
+  
